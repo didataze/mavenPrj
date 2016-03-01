@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/mavenPrj.iml" filepath="$PROJECT_DIR$/mavenPrj.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prjDAO/prjDAO.iml" filepath="$PROJECT_DIR$/prjDAO/prjDAO.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prjSRV/prjSRV.iml" filepath="$PROJECT_DIR$/prjSRV/prjSRV.iml" />
+      <module fileurl="file://$PROJECT_DIR$/prjWEB/prjWEB.iml" filepath="$PROJECT_DIR$/prjWEB/prjWEB.iml" />
+    </modules>
+  </component>
+</project>
