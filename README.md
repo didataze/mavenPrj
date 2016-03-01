@@ -6,5 +6,5 @@ un projet maven sous intelliJ :
 - SpringBoot
 - AngularJS
 - BootStrap
-- Mysql
+- Mysql.
 
