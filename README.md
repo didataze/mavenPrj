@@ -1,4 +1,10 @@
 # mavenPrj
 
 
-projet maven intelliJ
+un projet maven sous intelliJ :
+- Maven multi module
+- SpringBoot
+- AngularJS
+- BootStrap
+- Mysql
+
