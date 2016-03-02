@@ -5,48 +5,21 @@
          version="3.1">
     <display-name>Apache-Axis</display-name>
     <servlet>
-        <display-name>Apache-Axis Servlet</display-name>
-        <servlet-name>AxisServlet</servlet-name>
-        <servlet-class>org.apache.axis.transport.http.AxisServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <display-name>Axis Admin Servlet</display-name>
-        <servlet-name>AdminServlet</servlet-name>
-        <servlet-class>org.apache.axis.transport.http.AdminServlet</servlet-class>
-        <load-on-startup>100</load-on-startup>
-    </servlet>
-    <servlet>
-        <display-name>SOAPMonitorService</display-name>
-        <servlet-name>SOAPMonitorService</servlet-name>
-        <servlet-class>org.apache.axis.monitor.SOAPMonitorService</servlet-class>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <servlet-class>com.sun.jersey.spi.container.servlet.ServletContainer</servlet-class>
         <init-param>
-            <param-name>SOAPMonitorPort</param-name>
-            <param-value>5101</param-value>
+            <param-name>com.sun.jersey.config.property.packages</param-name>
+            <param-value>com.mkyong.rest</param-value>
         </init-param>
-        <load-on-startup>100</load-on-startup>
+        <init-param>
+            <param-name>com.sun.jersey.api.json.POJOMappingFeature</param-name>
+            <param-value>true</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
     </servlet>
+
     <servlet-mapping>
-        <servlet-name>AxisServlet</servlet-name>
-        <url-pattern>/servlet/AxisServlet</url-pattern>
+        <servlet-name>jersey-serlvet</servlet-name>
+        <url-pattern>/rest/*</url-pattern>
     </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AxisServlet</servlet-name>
-        <url-pattern>*.jws</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AxisServlet</servlet-name>
-        <url-pattern>/services/*</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>SOAPMonitorService</servlet-name>
-        <url-pattern>/SOAPMonitor</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>AdminServlet</servlet-name>
-        <url-pattern>/servlet/AdminServlet</url-pattern>
-    </servlet-mapping>
-    <mime-mapping>
-        <extension>wsdl</extension>
-        <mime-type>text/xml</mime-type>
-    </mime-mapping>
 </web-app>
